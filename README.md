@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to paulaandreapinzon website
 
 ## Project info
 
@@ -36,9 +36,4 @@ git remote add origin https://github.com/pauandreapinzon/Pagina-web-Paula-Pinzon
 git push -u origin main
 ```
 
-Notas
-- No incluyas archivos sensibles en el repositorio (`.env`).
-- Si usas `npm`, el archivo `package-lock.json` se regenerará al ejecutar `npm install`.
-
-Si quieres, puedo: generar `sitemap.xml`, añadir `mainEntityOfPage` y `aggregateRating` al JSON-LD, y preparar el commit final para que publiques todo en GitHub.
 
