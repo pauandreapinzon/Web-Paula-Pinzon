@@ -11,12 +11,12 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient glow-effect">
-          Conectando el Arte, la Cultura y la Inteligencia Artificial
+          Paula Pinzon Conferencista experta en IA Generativa
         </h1>
         <p className="text-xl md:text-2xl mb-4 text-foreground/90">
-          Paula Pinzón Maldonado
+          Conectando el Arte, la Cultura y la Inteligencia Artificial
         </p>
-        <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">Conferencista experta en IA Generativa | GEO-AEO | IA para creativos</p>
+        <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">PhD y educadora en IA Generativa | GEO-AEO | IA para creativos</p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold" onClick={() => window.open('https://www.linkedin.com/in/paula-pinzon-maldonado/', '_blank')}>
             Agendar Conferencia <ArrowRight className="ml-2 h-5 w-5" />
