@@ -11,7 +11,8 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient glow-effect">
-          Paula Pinzon Conferencista experta en IA Generativa
+          <span className="block">Paula Pinzón</span>
+          <span className="block text-2xl md:text-3xl font-medium">Conferencista: Visibilidad y Estrategia con IA</span>
         </h1>
         <p className="text-xl md:text-2xl mb-4 text-foreground/90">
           Conectando el Arte, la Cultura y la Inteligencia Artificial
