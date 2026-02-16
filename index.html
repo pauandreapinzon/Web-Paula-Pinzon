@@ -656,7 +656,32 @@
     </script>
 
   </head>
+<script type="module">
+  import {createClient} from 'https://esm.sh/@sanity/client'
 
+  const client = createClient({
+    projectId: '6gjw60zo', // Tu ID de la imagen
+    dataset: 'production',
+    useCdn: true,
+    apiVersion: '2023-05-03',
+  })
+
+  async function fetchPosts() {
+    const posts = await client.fetch('*[_type == "post"]{title, "imageUrl": mainImage.asset->url}')
+    const container = document.getElementById('blog-container')
+    
+    container.innerHTML = posts.map(post => `
+      <div class="post-card">
+        <h3>${post.title}</h3>
+        ${post.imageUrl ? `<img src="${post.imageUrl}" width="200" />` : ''}
+      </div>
+    `).join('')
+  }
+
+  fetchPosts()
+</script>
+
+<div id="blog-container">Cargando artículos...</div>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
